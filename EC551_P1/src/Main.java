@@ -14,11 +14,11 @@ public class Main {
 
       String term_form = args[0];
 
+      String gate_form = args[1];
+
       sb.append(args[1]);
 
       String S3 = sb.toString();
-      System.out.println(S3);
-
 
             String[] s3 =StringUtils.split(S3,",");
             System.out.println(Arrays.toString(s3));
@@ -57,12 +57,7 @@ public class Main {
           System.out.println(Canonical_POS.POS_offset(index));
         }
 
-
-
-
-
-
-
+        System.out.println(Literals.simplifyLiteral(Literals.getLiteral("(a'*b*c*d')"),Literals.getLiteral("(a*b*c*d)")));
         //int[] out_or = Gate_or.OR_3(i2,i3,i5);
         //for (int i=0;i<out_or.length;i++){
         //System.out.println(out_or[i]);
